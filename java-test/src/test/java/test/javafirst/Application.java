@@ -103,7 +103,7 @@ public class Application {
         for(int i=1; i<=count; i++)
         {
             WebElement item = driver.findElement(By.cssSelector(".grid-view li:nth-child("+i+")"));
-            wait.until(visibilityOf(item));
+            wait.until(elementToBeClickable(item));
             action.moveToElement(item).perform();
             WebElement quick_button=driver.findElement(By.cssSelector(".grid-view li:nth-child("+i+") a.lightbox-link.quick-view"));
             wait.until(visibilityOf(quick_button));
