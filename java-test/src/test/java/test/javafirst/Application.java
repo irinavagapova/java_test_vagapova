@@ -40,7 +40,7 @@ public class Application {
         wait.until(elementToBeClickable(link));
         link.click();
         wait.until(presenceOfElementLocated(By.cssSelector(".left-navigation")));
-        WebElement link_catalog = driver.findElement(By.cssSelector(".left-navigation li:nth-child(2) a"));
+        WebElement link_catalog = driver.findElement(By.cssSelector(".left-navigation li:nth-child(5) a"));
         wait.until(elementToBeClickable(link_catalog));
         link_catalog.click();
         // wait until catalog list all located on the page
